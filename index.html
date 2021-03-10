@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main id='bg'>
+       <div class="bloc-left">
+            <div class="bloc-up"></div>
+            <div class="boc-down">
+                <div class="center">
+                    <div class="tempeture">
+                        <p class="degree"></p>
+                    </div>
+                    <div class="date">
+                        <p class="city"></p>
+                        <p class="country"><p class="continent"></p></p>
+                    </div>
+                    <div class="weather">
+                        <div class="box-img">
+                            <img src="ressources/icon/Clouds.svg" alt="icon-rainy">
+                        </div>
+                        <p class="state"></p>
+                    </div>
+                </div>
+            </div>
+       </div> 
+       <div class="bloc-right">
+            <form action="" class="find">
+                <input type="text" placeholder="Find location">
+                <button class="find-logo" type="submit"><img src="ressources/icon/loupe.svg" alt="logo-find"></button>
+            </form>
+            <div class="day-week">
+                <div class="days">
+                    <p>Today</p>
+                    <p>Tomorrow</p>
+                    <p>Tuesday</p>
+                    <p>Wednesday</p>
+                    <p>Thursday</p>
+                    <p>Friday</p>
+                    <p>Saturday</p>
+                </div>
+                <div class="days-logo">
+                    <div class="logo-weather first-icon"><img src="ressources/icon/" alt="icon weather"></div>
+                    <div class="logo-weather rest-icon"><img src="ressources/icon/" alt="icon weather"></div>
+                    <div class="logo-weather rest-icon"><img src="ressources/icon/" alt="icon weather"></div>
+                    <div class="logo-weather rest-icon"><img src="ressources/icon/" alt="icon weather"></div>
+                    <div class="logo-weather rest-icon"><img src="ressources/icon/" alt="icon weather"></div>
+                    <div class="logo-weather rest-icon"><img src="ressources/icon/" alt="icon weather"></div>
+                    <div class="logo-weather rest-icon"><img src="ressources/icon/" alt="icon weather"></div>
+                </div>
+                <div class="days-tempeture">
+                    <div class="inline"><p></p><div class="temp-max"></div></div>
+                    <div class="inline"><p></p><div class="temp-max"></div></div>
+                    <div class="inline"><p></p><div class="temp-max"></div></div>
+                    <div class="inline"><p></p><div class="temp-max"></div></div>
+                    <div class="inline"><p></p><div class="temp-max"></div></div>
+                    <div class="inline"><p></p><div class="temp-max"></div></div>
+                    <div class="inline"><p></p><div class="temp-max"></div></div>
+                    
+                </div>
+            </div>
+            <hr>
+            <h2>Weather Details</h2>
+            <div class="info-bloc">
+                <div class="info-left">
+                    <p>Humidity</p>
+                    <p>Wind</p>
+                    <p>Clouds</p>
+                </div>
+                <div class="info-right">
+                    <p class="humidity"></p>
+                    <p class="wind"></p>
+                    <p class="cloud"></p>
+                </div>
+            </div>
+            <hr>
+            <p class="source">openweathermap.org</p>
+       </div> 
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
