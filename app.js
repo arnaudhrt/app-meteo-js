@@ -65,7 +65,7 @@ function callApiMap() {
 // Function call API to get weather info
 function callApiWeather(long, lat) {
     fetch(
-        `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&exclude=minutely&units=metric&appid=${keyApiWeather}`
+        `http://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&exclude=minutely&units=metric&appid=${keyApiWeather}`
     )
         .then((answer) => {
             return answer.json()
